@@ -1,0 +1,114 @@
+
+body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: #ecf5ff;}        
+.container {
+  margin: 0 auto;
+  padding: 16px;
+  border: gold solid 1px;
+}
+.choice-container {
+          display: flex;
+          margin-bottom: 0.5rem;
+          width: 100%;
+          font-size: 0.8rem;
+          border: 0.1rem solid rgb(86, 165, 235, 0.25);
+          background-color: white;
+        }
+        
+        .choice-container:hover {
+          cursor: pointer;
+          box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+          transform: translateY(-0.1rem);
+          transition: transform 150ms;
+        }
+        
+        .choice-prefix {
+          padding: 1rem 2rem;
+          background-color: #56a5eb;
+          color: white;
+        }
+        
+        .choice-text {
+          padding: 1rem;
+          width: 100%;
+        }
+        
+        .correct {
+          background-color: #28a745;
+        }
+        
+        .incorrect {
+          background-color: #dc3545;
+        }
+        
+        /* HUD */
+        
+        #hud {
+          display: flex;
+          justify-content: space-between;
+        }
+        
+        .hud-prefix {
+          text-align: center;
+          font-size: 0.8rem;
+        }
+        
+        .hud-main-text {
+          text-align: center;
+        }
+        #next{
+          background-color: khaki;
+          color:navy;
+          border: 0px;
+          border-radius: 1px;
+          padding: 10px;
+        }
+        #button{
+          text-align: center;
+          align-content: center;
+        }
+        #next:hover{
+          cursor: pointer;
+        }/*
+        .popup {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }*/
+        .popup .popuptext {
+          visibility: hidden;
+          width: 160px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 8px 0;
+        }
+        .popup .show {
+          visibility: visible;
+          -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+        }
+        @-webkit-keyframes fadeIn {
+          from {opacity: 0;} 
+          to {opacity: 1;}
+        }
+        @keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity:1 ;}
+        }
+        #head{
+          display: flex;
+          justify-content: space-between;
+        }
+        #count{
+          direction: rtl;
+          border: 5px solid #56a5eb;
+          border-radius: 10px;
+          padding: 2px;
+          font-family: cursive;
+          color: black;
+        }

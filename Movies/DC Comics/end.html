@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreCard</title>
+    <link rel="stylesheet" href="end.css">
+</head>
+<body>
+    <div class="container">
+        <p> </p>
+        <p> </p>
+        <p id="cc">Congratulations..
+            <img src="/images/badges/party-popper-apple.png" alt="congo" width="20" height="20">
+        </p>
+        <p id="fs"></p>
+        <p id="badge"></p>
+        <p id="bgt">You earned a badge</p>
+        <a class="btn" href="javascript:history.back()">Play Again</a>
+        <a class="btn" href="/">Go Home</a>
+    </div>
+    <script>
+        var x = window.localStorage.getItem("score");
+        var y = (x/150)*100;
+        if(y>=85)
+        {
+            var i = document.createElement("IMG");
+            i.setAttribute("src", "/images/badges/gold badge.jpg");
+            i.setAttribute("width", "50");
+            i.setAttribute("height", "50");
+            var src = document.getElementById("badge");
+            src.appendChild(i);
+        }
+        else if(y>=65 && y<85)
+        {
+            var i = document.createElement("IMG");
+            i.setAttribute("src", "/images/badges/silver badge.jpg");
+            i.setAttribute("width", "50");
+            i.setAttribute("height", "50");
+            var src = document.getElementById("badge");
+            src.appendChild(i);
+        }
+        else if(y>=40 && y<65){
+            document.getElementById("bgt").innerHTML="You did pretty Well";
+        }
+        else{
+            document.getElementById("cc").style.display="none";
+            document.getElementById("bgt").innerHTML="Better Luck Next Time!!";
+        }
+        document.getElementById("fs").innerHTML="Your score is "+x;
+    </script>
+</body>
+</html>
