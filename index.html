@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to K-QUIZI</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="topnav">
+        <a id="kq" href="index.html">
+            <img  alt="quizgame" src="images/home/Quiz-Logo.jpg" width="100" height="46" style="border: 1px solid white;">
+        </a>
+   <a class="active" href="#about">About</a>
+   <a href="#contact">Contact</a>
+       <a href="#help">Help</a>
+       <a href="#feed">Feedback</a>
+       <!--<a href="login.html" target="_blank">Login</a>
+       <div class="search-container">-->
+     <!--<form action="/action_page.php">
+       <input type="text" placeholder="Search.." name="search">
+       <button type="submit"><i class="fa fa-search"></i></button>
+     </form>-->
+   </div>
+ </div>
+ <p id="p1">Mathematics
+   <div class="btn-grp1" style="width: 100%;">
+    <button  style="width: 25%;height:125px;" onclick="algb()">Algebra</button>
+    <button  style="width: 25%;height:125px;" onclick="probab()">Probability</button>
+    <button  style="width: 25%;height:125px;" onclick="stats()">Statistics</button>
+    <button  style="width: 25%;height:125px;" onclick="Geo()">Geometry</button>
+   </div>
+  <p id="p2">Physics
+  <div class="btn-grp2" style="width: 100%;">
+    <button style="width: 25%;height:125px;" onclick="Mot()">Motion</button>
+    <button style="width: 25%;height: 125px;" onclick="Flu()">Fluids</button>
+    <button style="width: 25%;height: 125px;" onclick="Elec()">Electrostats</button>
+    <button style="width: 25%;height: 125px;" onclick="For()">Forces</button>
+   </div>
+  <p id="p3">Chemistry
+  <div class="btn-grp3" style="width: 100%;">
+    <button style="width: 25%;height:125px;" onclick="Per()">Periodic Table</button>
+    <button style="width: 25%;height: 125px;" onclick="Bon()">Bonding</button>
+    <button style="width: 25%;height: 125px;" onclick="Org()">Organic</button>
+    <button style="width: 25%;height: 125px;" onclick="Phy()">Physical Chemistry</button>
+   </div>
+   <p id="p5">Movies
+   <div class="btn-grp5" style="width: 100%;">
+     <button style="width: 25%;height:125px;" onclick="Har()">Harry Potter Series</button>
+     <button style="width: 25%;height: 125px;" onclick="Ave()">Avengers Series</button>
+     <button style="width: 25%;height: 125px;" onclick="Tra()">Transformers Series</button>
+     <button style="width: 25%;height: 125px;" onclick="DC()">DC Comics</button>
+    </div>
+  <p id="p4">Sports
+  <div class="btn-grp4" style="width: 100%;">
+    <button style="width: 25%;height:125px;" onclick="Cri()">Cricket</button>
+    <button style="width: 25%;height: 125px;" onclick="Hoc()">Hockey</button>
+    <button style="width: 25%;height: 125px;" onclick="Bad()">Badminton</button>
+    <button style="width: 25%;height: 125px;" onclick="Foo()">Football</button>
+   </div>
+   <p id="p6">Others..
+
+  <div class="btn-grp6" style="width: 100%;">
+    <button id="p61" style="width: 25%;height:125px;" onclick="Ani()">Anime</button>
+    <button id="p62" style="width: 25%;height: 125px;" onclick="Curr()">Current Affairs</button>
+    <button id="p63" style="width: 25%;height: 125px;" onclick="Gen()">General knowledge</button>
+    <button id="p64" style="width: 25%;height: 125px;" onclick="Ble()">Blend of best</button>
+   </div>
+   <footer id="foot">
+     <div id="about">
+       <p>About Us</p>
+       <p>This Web App is designed as a part of mini-project initiative,<br>started in KIET Group of Institutions.</p>
+     </div>
+     <div id="contact">
+       <p>Contact Us at:</p><p>Email : <a href="mailto:shivam.1923ec1084@kiet.edu" style="color: aquamarine;">shivam.1923ec1084@kiet.edu</a><br>Address : KIET Group of. Institutions. Delhi-NCR, Meerut Road (NH-58) Ghaziabad</p>
+     </div>
+     <div id="help">
+       <p>Help..</p>
+       <p>Choose any game of ur interest from the visible options<br>or search relevant topic of your like..</p>
+     </div>
+     <div id="feed">
+       <p>Please provide your valuable feedback <a href="#link" style="color: aquamarine;">here..</a></p>
+       <p>We value your feedback, it'll only take a moment.</p>
+     </div>
+   </footer>
+</body>
+<script>
+  function algb(){
+    window.localStorage.setItem("url","Quizzes/Maths/Algebra/algebra.html");
+    window.localStorage.setItem("name","Maths-Algebra");
+    location.href="timer.html";
+  }
+  function probab(){
+    window.localStorage.setItem("url","Quizzes/Maths/Probability/probability.html");
+    window.localStorage.setItem("name","Maths-Probability");
+    location.href="timer.html"
+  }
+  function stats(){
+    window.localStorage.setItem("url","Quizzes/Maths/Statistics/statistics.html");
+    window.localStorage.setItem("name","Maths-Statistics");
+    location.href="timer.html";
+  }
+  function Geo(){
+    window.localStorage.setItem("url","Quizzes/Maths/Geometry/geometry.html");
+    window.localStorage.setItem("name","Maths-Geometry");
+    location.href="timer.html";
+  }
+  function Mot(){
+    window.localStorage.setItem("url","Quizzes/Physics/Motion/motion.html");
+    window.localStorage.setItem("name","Physics-Motion");
+    location.href="timer.html";
+  }
+  function Flu(){
+    window.localStorage.setItem("url","Quizzes/Physics/Fluids/fluids.html");
+    window.localStorage.setItem("name","Physics-Fluids");
+    location.href="timer.html";
+  }
+  function Elec(){
+    window.localStorage.setItem("url","Quizzes/Physics/Electrostats/Electrostats.html");
+    window.localStorage.setItem("name","Physics-Electrostats");
+    location.href="timer.html";
+  }
+  function For(){
+    window.localStorage.setItem("url","Quizzes/Physics/Forces/forces.html");
+    window.localStorage.setItem("name","Physics-Forces");
+    location.href="timer.html";
+  }
+  function Per(){
+    window.localStorage.setItem("url","Quizzes/Chemistry/Periodic Table/periodic.html");
+    window.localStorage.setItem("name","Chemistry-Periodic Table");
+    location.href="timer.html";
+  }
+  function Bon(){
+    window.localStorage.setItem("url","Quizzes/Chemistry/Bonding/bonding.html");
+    window.localStorage.setItem("name","Chemistry-Bonding");
+    location.href="timer.html";
+  }
+  function Org(){
+    window.localStorage.setItem("url","Quizzes/Chemistry/Organic/organic.html");
+    window.localStorage.setItem("name","Chemistry-Organic");
+    location.href="timer.html";
+  }
+  function Phy(){
+    window.localStorage.setItem("url","Quizzes/Chemistry/Physical Chemistry/physical.html");
+    window.localStorage.setItem("name","Chemistry-Physical Chemistry");
+    location.href="timer.html";
+  }
+  function Cri(){
+    window.localStorage.setItem("url","Quizzes/Sports/Cricket/cricket.html");
+    window.localStorage.setItem("name","Sports-Cricket");
+    location.href="timer.html";
+  }
+  function Hoc(){
+    window.localStorage.setItem("url","Quizzes/Sports/Hockey/hockey.html");
+    window.localStorage.setItem("name","Sports-Hockey");
+    location.href="timer.html";
+  }
+  function Bad(){
+    window.localStorage.setItem("url","Quizzes/Sports/Badminton/badminton.html");
+    window.localStorage.setItem("name","Sports-Badminton");
+    location.href="timer.html";
+  }
+  function Foo(){
+    window.localStorage.setItem("url","Quizzes/Sports/Football/football.html");
+    window.localStorage.setItem("name","Sports-Football");
+    location.href="timer.html";
+  }
+  function Har(){
+    window.localStorage.setItem("url","Quizzes/Movies/Harry Potter Series/harry.html");
+    window.localStorage.setItem("name","Movies-Harry Potter");
+    location.href="timer.html";
+  }
+  function Ave(){
+    window.localStorage.setItem("url","Quizzes/Movies/Avengers Series/avengers.html");
+    window.localStorage.setItem("name","Movies-Avengers");
+    location.href="timer.html";
+  }
+  function Tra(){
+    window.localStorage.setItem("url","Quizzes/Movies/Transformers Series/transformers.html");
+    window.localStorage.setItem("name","Movies-Transformers");
+    location.href="timer.html";
+  }
+  function DC(){
+    window.localStorage.setItem("url","Quizzes/Movies/DC Comics/dc.html");
+    window.localStorage.setItem("name","Movies-DC");
+    location.href="timer.html";
+  }
+  function Ani(){
+    window.localStorage.setItem("url","Quizzes/Others/Anime/anime.html");
+    window.localStorage.setItem("name","Anime");
+    location.href="timer.html";
+  }
+  function Curr(){
+    window.localStorage.setItem("url","Quizzes/Others/Current Affairs/current.html");
+    window.localStorage.setItem("name","Current Affairs");
+    location.href="timer.html";
+  }
+  function Gen(){
+    window.localStorage.setItem("url","Quizzes/Others/General Knowledge/general.html");
+    window.localStorage.setItem("name","General Knowledge");
+    location.href="timer.html";
+  }
+  function Ble(){
+    window.localStorage.setItem("url","Quizzes/Others/Blend of Best/blend.html");
+    window.localStorage.setItem("name","Blend of Best");
+    location.href="timer.html";
+  }
+</script>
+</html>
